@@ -19,8 +19,8 @@ public class AirlineLogic {
         for (int i = 0; i < airlines.size()-1; i++) {
             for (int j = 0; j < airlines.get(i).getDays().size(); j++) {
                 if (airlines.get(i).getDays().get(j).equals(day)) {
-
-                }numbersOfFlights.add(airlines.get(i).getFlightNumber());
+                    numbersOfFlights.add(airlines.get(i).getFlightNumber());
+                }
             }
         }
         return numbersOfFlights;

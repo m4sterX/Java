@@ -8,9 +8,16 @@ import java.util.Objects;
 public class Depot {
      private List<Train> trains;
 
+    public Depot() {
+    }
+    public Depot(List<Train> trains) {
+        this.trains = trains;
+    }
+
     public List<Train> getTrains() {
         return trains;
     }
+
 
     @Override
     public boolean equals(Object o) {
@@ -23,13 +30,6 @@ public class Depot {
     @Override
     public int hashCode() {
         return Objects.hash(trains);
-    }
-
-    public Depot() {
-    }
-
-    public Depot(List<Train> trains) {
-        this.trains = trains;
     }
 
     public void setTrains(List<Train> trains) {

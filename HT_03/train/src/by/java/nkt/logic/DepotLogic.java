@@ -7,11 +7,13 @@ import java.util.Comparator;
 import java.util.List;
 
 public class DepotLogic {
+    // СОРТИРОВКА ПО ОМЕРУ ПОЕЗДА
     public List<Train> sortByNumber(Depot depot) {
         List<Train> trains = depot.getTrains();
         trains.sort(Comparator.comparing(Train::getTrainNumber));
         return trains;
     }
+    // ПОИСК ПО НОМЕРУ
     public Train findByNumber(Depot depot, int n) {
         List<Train> trains = depot.getTrains();
         for (int i = 0; i < trains.size(); i++) {
@@ -19,8 +21,9 @@ public class DepotLogic {
                 return trains.get(i);
             }
         }
-        return null;//if(trains.get(i).getDestination().compareTo(trains.get(i+1).getDestination()) > 0)
+        return null;
     }
+    // СОРТИРОВКА ПО ПУНКТУ НАЗНАЧЕНИЯ И ВРЕМЕНИ
     public List<Train> sortByDestination(Depot depot) {
         List<Train> trains = depot.getTrains();
         boolean isSorted = false;

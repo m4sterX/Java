@@ -1,8 +1,8 @@
 package by.java.nkt.train;
 
 public class Train {
-    private String destination;
-    private int arriveTimeMin;
+    private String destination; // УНКТ НАЗНАЧ
+    private int arriveTimeMin; // ВРЕМЯ ПРИБЫТИЯ
     private int arriveTimeHour;
 
     public int getArriveTimeMin() {

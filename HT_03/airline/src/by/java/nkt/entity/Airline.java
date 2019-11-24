@@ -31,6 +31,18 @@ public class Airline {
         return typeOfPlane;
     }
 
+    public Airline() {
+    }
+
+    public Airline(String finalDestination, int flightNumber, String typeOfPlane, int departureTimeMin, int departureTimeHour, ArrayList<String> days) {
+        this.finalDestination = finalDestination;
+        this.flightNumber = flightNumber;
+        this.typeOfPlane = typeOfPlane;
+        this.departureTimeMin = departureTimeMin;
+        this.departureTimeHour = departureTimeHour;
+        this.days = days;
+    }
+
     @Override
     public String toString() {
         return "Airline{" +
@@ -43,17 +55,9 @@ public class Airline {
                 '}';
     }
 
-    public Airline(String finalDestination, int flightNumber, String typeOfPlane, int departureTimeMin, int departureTimeHour, ArrayList<String> days) {
-        this.finalDestination = finalDestination;
-        this.flightNumber = flightNumber;
-        this.typeOfPlane = typeOfPlane;
-        this.departureTimeMin = departureTimeMin;
-        this.departureTimeHour = departureTimeHour;
-        this.days = days;
-    }
 
-    public Airline() {
-    }
+
+
 
     @Override
     public boolean equals(Object o) {
